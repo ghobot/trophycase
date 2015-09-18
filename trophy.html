@@ -88,10 +88,9 @@
             margin: 0 auto;
             background-color: ;
             padding: 10px 0px 10px 0px;
-            /*            box-shadow: -10px 1px 10px #888 inset;*/
 
-            border-top: 1px solid #999;
-            border-bottom: 1px solid #999;
+            border-top: 1px solid #bbb;
+            border-bottom: 1px solid #bbb;
         }
 
         .badge-info img {
@@ -173,7 +172,6 @@
         }
 
         .card {
-            /*            background-color: #fff;*/
 
             width: 100%;
             border-radius: 6px;
@@ -210,6 +208,12 @@
 
         .badges.grid {
             margin-left: 50px;
+        }
+
+        .close{
+            font-size:42px;
+            margin-bottom: -10px;
+
         }
 
         .animated {
@@ -273,6 +277,10 @@
             filter: grayscale(100%);
             opacity: 0.3;
         }
+
+        .badge-info-block {
+            overflow-x: hidden;
+        }
     </style>
 
 </head>
@@ -311,199 +319,104 @@
             </div>
 
             <div class="badges grid">
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="badge-wrapper">
-                    <div class="badge-info details hide animated fadeInDown row">
-                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="col-xs-12">
-                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
-                                <img src="/images/badge.png" class="img-responsive">
-                                <div class="badge-status"><span class="locked">not earned</span>
-                                </div>
-                                <div class="badge-status"><span class="unlocked">earned</span>
-                                </div>
-                            </div>
-                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
-                                <ul class="list-group">
-                                    <li class="badge-title">
-                                        <p>Title:</p>
-                                        <span>Lorem ipsum dolor sit amet
-                                    </span>
-                                    </li>
-                                    <li class="badge-description">
-                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                    <li class="badge-criteria">
-                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="badge-image col-xs-4 col-md-2"><img src="/images/badge.png" class="img-responsive">
-                    </div>
-                </div>
+                <!--                badge info will be inserted here-->
+                <div class="badge-info-block"></div>
 
+                <div class="badge-wrapper" data-badge="0">
+                    <div class="badge-image col-xs-6 col-md-2"><img src="/images/badge.png" class="img-responsive">00 </div>
+
+                    <div class="badge-info details hide animated fadeInDown row" data-badge="0">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="col-xs-12">
+                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
+                                <img src="/images/badge.png" class="img-responsive">
+                                <div class="badge-status"><span class="locked">not earned</span>
+                                </div>
+                                <div class="badge-status"><span class="unlocked">earned</span>
+                                </div>
+                            </div>
+                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
+                                <ul class="list-group">
+                                    <li class="badge-title">
+                                        <p>00 Title:</p>
+                                        <span>Lorem ipsum dolor sit amet
+                                    </span>
+                                    </li>
+                                    <li class="badge-description">
+                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                    <li class="badge-criteria">
+                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="badge-wrapper" data-badge="1">
+                    <div class="badge-image col-xs-6 col-md-2"><img src="/images/badge.png" class="img-responsive">01 </div>
+
+                    <div class="badge-info details hide animated fadeInDown row" data-badge="1">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="col-xs-12">
+                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
+                                <img src="/images/badge.png" class="img-responsive">
+                                <div class="badge-status"><span class="locked">not earned</span>
+                                </div>
+                                <div class="badge-status"><span class="unlocked">earned</span>
+                                </div>
+                            </div>
+                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
+                                <ul class="list-group">
+                                    <li class="badge-title">
+                                        <p>01 Title:</p>
+                                        <span>Lorem ipsum dolor sit amet
+                                    </span>
+                                    </li>
+                                    <li class="badge-description">
+                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                    <li class="badge-criteria">
+                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="badge-wrapper" data-badge="2">
+                    <div class="badge-image col-xs-6 col-md-2"><img src="/images/badge.png" class="img-responsive">02 </div>
+
+                    <div class="badge-info details hide animated fadeInDown row" data-badge="2">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="col-xs-12">
+                            <div class="badge-image pull-left col-xs-12 col-md-4 col-lg-2">
+                                <img src="/images/badge.png" class="img-responsive">
+                                <div class="badge-status"><span class="locked">not earned</span>
+                                </div>
+                                <div class="badge-status"><span class="unlocked">earned</span>
+                                </div>
+                            </div>
+                            <div class="metadata col-xs-12 col-md-8 col-lg-6">
+                                <ul class="list-group">
+                                    <li class="badge-title">
+                                        <p>02 Title:</p>
+                                        <span>Lorem ipsum dolor sit amet
+                                    </span>
+                                    </li>
+                                    <li class="badge-description">
+                                        <p>Description: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                    <li class="badge-criteria">
+                                        <p>Criteria: </p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo vitae urna maximus vulputate. Praesent enim ante, feugiat dignissim quis, ullamcorper vitae elit. Curabitur sapien eros, blandit sed libero vel, hendrerit dignissim leo. Nulla imperdiet mauris nulla, in convallis est varius et. </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -523,23 +436,41 @@
 
     <script>
         $(function () {
-
+            OnButtonClose();
+            //hide all details that are showing
             $(".details").removeClass("show").addClass("hide");
 
-            $(".badge-image").click(function () {
 
-                console.log("image click event");
+            $(".badge-image").click(function () {
+                //return any open details to its matching div
+                var currentBadgeInfo = $(".badge-info-block .details");
 
                 $(".details").removeClass("show").addClass("hide");
+                var originalWrapperNum = $(currentBadgeInfo).data("badge");
+                $(".badge-wrapper[data-badge='" + originalWrapperNum + "']").append($(currentBadgeInfo));
 
-                $(this).siblings(".details").removeClass("hide").addClass("show");
+
+                $(this).siblings(".details").appendTo($(".badge-info-block")).removeClass("hide").addClass("show");
             });
-
-            $("button.close").click(function () {
-                $(this).parent().removeClass("show").addClass("hide");
-            });
-
         })
+
+        function OnButtonClose() {
+            $("button.close").click(function () {
+                //get current badge info
+
+                var currentBadgeInfo = $(this).parent();
+
+                // hide the details
+
+
+                $(currentBadgeInfo).removeClass("show").addClass("hide");
+
+                //return it to its original wrapper
+                var originalWrapperNum = $(currentBadgeInfo).data("badge");
+                $(".badge-wrapper[data-badge='" + originalWrapperNum + "']").append($(currentBadgeInfo));
+
+            });
+        }
     </script>
 </body>
 
